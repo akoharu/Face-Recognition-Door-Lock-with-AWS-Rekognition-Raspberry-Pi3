@@ -4,7 +4,7 @@ s3_client = boto3.client(
     's3',
     aws_access_key_id='',# add the aws access key
     aws_secret_access_key=''# add the aws secret access key
-    
+
 )
 
 collectionId='' #collection name
