@@ -17,9 +17,8 @@ def face():
 	else:
 		print("Unknown Person")
 	print(returned_text)
-	remember = open('text.txt','w')
-	remember.write(returned_text)
-	remember.close()
+	with open('text.txt','w') as remember:
+		remember.write(returned_text)
 
 button = Button("GPIO26")# Connect the Botton with GPIO 26
 while True:
